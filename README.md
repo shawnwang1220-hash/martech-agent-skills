@@ -26,13 +26,14 @@ These skills replace guessing with **objective instrumentation + layered elimina
 | [`geo-ai-crawler-policy`](./skills/geo-ai-crawler-policy/SKILL.md) | Configuring `robots.txt` + `llms.txt` for generative engines | Three-class AI crawler taxonomy (retrieval / user-triggered / training) with verified UA lists. Blocking training crawlers costs you zero AI search visibility — citation flow comes from retrieval crawlers, not training ones. |
 | [`wechat-mp-draft`](./skills/wechat-mp-draft/SKILL.md) | WeChat Official Account API → draft box | Full chain plus six field-tested traps, incl. the GBK-weighted length ceiling on `title`/`digest` (the official docs get the unit wrong). Ships six runnable scripts — a connectivity probe, three boundary probes, a Markdown→HTML converter, and the full push chain with byte-exact read-back. |
 
+| [`content-platform-adaptation`](./skills/content-platform-adaptation/SKILL.md) | Rewriting one finished article per platform (WeChat / Zhihu / LinkedIn / X) | Publish different versions per platform, not copies — and re-check every self-referential claim per platform. What travels is the argument, not the prose. |
+
 ## In the queue
 
 Being cleaned one at a time — published only once all credentials, property IDs, and machine-specific paths are stripped.
 
 | Skill | What it's for | Core idea |
 |---|---|---|
-| `content-platform-adaptation` | Rewriting one finished article per platform (WeChat / Zhihu / LinkedIn / X) | Publish different versions per platform, not copies — and re-check every self-referential claim per platform. |
 | `bilibili-up-analysis` | Scraping and analyzing a Bilibili creator's full video catalogue | Working pipeline around the platform's risk-control (`-352`) instead of fighting it. |
 
 ## How to use these
