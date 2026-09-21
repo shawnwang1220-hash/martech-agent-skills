@@ -24,6 +24,7 @@
 |---|---|---|
 | [`web-tracking-loss-triage`](./skills/web-tracking-loss-triage/SKILL.md) | GA4 / GTM / 像素事件不发（`page_view` 丢失、Realtime 看不到） | 用客观量测代替 DevTools 面板。先拆开「有没有尝试」和「有没有初始化」，再谈机制。 |
 | [`geo-ai-crawler-policy`](./skills/geo-ai-crawler-policy/SKILL.md) | 为生成式引擎配置 `robots.txt` + `llms.txt` | AI 爬虫三分类（检索型 / 用户触发型 / 训练型）+ 已核实 UA 名单。禁训练型爬虫不损失任何 AI 搜索可见性——引用回流靠检索型，不靠训练型。 |
+| [`wechat-mp-draft`](./skills/wechat-mp-draft/SKILL.md) | 公众号官方 API → 草稿箱 | 全链路 + 六个实测坑，含 `title`/`digest` 的 GBK 加权长度上限（官方文档的单位写错了）。附 6 个可跑脚本：连通性探针、三个边界探针、Markdown→HTML 转换器、以及带回读逐字校验的完整推送链。 |
 
 ## 待发布队列
 
@@ -31,7 +32,6 @@
 
 | 技能 | 解决什么 | 核心思路 |
 |---|---|---|
-| `wechat-mp-draft` | 公众号官方 API → 草稿箱 | 全链路 + 六个实测坑，含 `title`/`digest` 的 GBK 加权长度上限 |
 | `content-platform-adaptation` | 一篇定稿改写成各平台专用版本（公众号 / 知乎 / 领英 / X） | 各平台发不同版本、不逐字复制，并逐平台复核「自证句」是否还成立 |
 | `bilibili-up-analysis` | 抓取并分析 B 站 UP 主全量视频 | 绕开平台风控（`-352`）的可用管线，而不是硬刚 |
 
