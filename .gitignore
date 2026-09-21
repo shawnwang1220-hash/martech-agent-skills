@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Never commit credentials
+*.env
+.env.*
+credentials.json
+*_token.json
+token_cache.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

@@ -1,0 +1,5 @@
+# Normalize line endings — skill files are authored on Windows but consumed cross-platform
+* text=auto eol=lf
+*.md text eol=lf
+*.png binary
+*.jpg binary
